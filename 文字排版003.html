@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>文字排版003</title>
+    <style type="text/css">
+    @import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,regular,500,700,900");
+    *{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-family: 'Noto Sans TC',sans-serif;
+    }
+    .container{
+        width: 1200px;
+        margin: auto;
+        padding: 100px 0;
+    }
+    .container h1{
+        font-size: 100px;
+        box-sizing: border-box;
+        padding:0 15px;
+        margin-bottom: 30px;
+        color: #aaa;
+        position: relative;
+    }
+    .container h1::after{
+        content: '';
+        display: block;
+        width: 100%;
+        height: 50px;
+        bottom: 0;
+        background-color: #eee;
+        position: absolute;
+        z-index: -1;
+    }
+    .container .txt{
+        box-sizing: border-box;
+        padding:0 15px;
+        column-count: 2;
+        column-gap: 30px;
+    }
+    .container .txt p::first-letter{
+        font-size: 40px;
+        float: left;
+        padding-right: 10px;
+    }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="container">
+            <h1>title</h1>
+            <div class="txt">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid itaque nisi, at sit aperiam molestiae sequi deserunt ullam! Dolore architecto laborum necessitatibus blanditiis corporis doloribus molestias repellendus explicabo? Rerum, quia?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid itaque nisi, at sit aperiam molestiae sequi deserunt ullam! Dolore architecto laborum necessitatibus blanditiis corporis doloribus molestias repellendus explicabo? Rerum, quia?</p>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

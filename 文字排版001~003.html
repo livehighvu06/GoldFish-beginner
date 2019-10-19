@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>文字排版001~003</title>
+    <style type="text/css">
+    @import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:100,300,regular,500,700,900");
+    *{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-family: 'Noto Sans TC',sans-serif;
+    }
+    .container{
+        width: 1200px;
+        margin: auto;
+    }
+    section{
+        padding: 50px 0;
+    }
+    .sec1{
+        display: flex;
+    }
+    .title1{
+        width: 400px;
+        text-align: right;
+        background-color: #d5c789;
+        font-size: 40px;
+        box-sizing: border-box;
+        padding-right: 0.3em;
+    }
+    .title1:after{
+        content: '';
+        display: block;
+        width: 4em;
+        height: 4px;
+        background-color: #000;
+        margin-left: auto;
+    }
+    .txt1{
+        width: 800px;
+        column-count: 2;
+        column-gap: 30px;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+    .title2{
+        font-size: 40px;
+        width: 400px;
+        float: left;
+        text-align: right;
+        border-right: 3px solid #000;
+        margin-right: 0.3em;
+        padding-right: 0.3em;
+        box-sizing: border-box;
+    }
+    .title3{
+        font-size: 100px;
+        color: #aaa;
+        position: relative;
+        padding: 0 15px;
+        box-sizing: border-box;
+    }
+    .title3::after{
+        content: '';
+        display: block;
+        width: 100%;
+        height: 40px;
+        bottom: 0;
+        background-color: #eeeeee;
+        position: absolute;
+        z-index: -1;
+    }
+    .txt3{
+        box-sizing: border-box;
+        padding: 15px;
+        column-count: 2;
+        column-gap: 30px;
+    }
+    .txt3 p::first-letter{
+        font-size: 40px;
+        box-sizing: border-box;
+        padding-right: 10px;
+        float: left;
+    }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="container sec1">
+            <h1 class="title1">tltle</h1>
+            <div class="txt1">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia minima laboriosam minus esse ratione reprehenderit, vitae eligendi! Distinctio obcaecati, temporibus, aspernatur tempore totam corporis rerum unde eos modi praesentium iure.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia minima laboriosam minus esse ratione reprehenderit, vitae eligendi! Distinctio obcaecati, temporibus, aspernatur tempore totam corporis rerum unde eos modi praesentium iure.</p>
+            </div>  
+        </div>
+    </section>
+    <section>
+        <div class="container sec2">
+            <h1 class="title2">tltle</h1>
+            <div class="txt2">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia minima laboriosam minus esse ratione reprehenderit, vitae eligendi! Distinctio obcaecati, temporibus, aspernatur tempore totam corporis rerum unde eos modi praesentium iure.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia minima laboriosam minus esse ratione reprehenderit, vitae eligendi! Distinctio obcaecati, temporibus, aspernatur tempore totam corporis rerum unde eos modi praesentium iure.</p>
+            </div>    
+        </div>
+    </section>
+    <section>
+        <div class="container sec3">
+            <h1 class="title3">tltle</h1>
+            <div class="txt3">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia minima laboriosam minus esse ratione reprehenderit, vitae eligendi! Distinctio obcaecati, temporibus, aspernatur tempore totam corporis rerum unde eos modi praesentium iure.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia minima laboriosam minus esse ratione reprehenderit, vitae eligendi! Distinctio obcaecati, temporibus, aspernatur tempore totam corporis rerum unde eos modi praesentium iure.</p>
+            </div>    
+        </div>
+    </section>
+</body>
+</html>

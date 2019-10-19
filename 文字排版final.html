@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>文字排版final</title>
+    <style type="text/css">
+    @import url("https://fonts.googleapis.com/css?family=Noto+Sans:regular,italic,700,700italic");
+    *{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-family: 'Noto Sans',sans-serif;
+    }
+    section{
+        margin: 50px 0;
+    }
+    .container{
+        width: 1200px;
+        margin: auto;
+        text-align: center;
+    }
+    .container h1{
+        width:100%;
+        box-sizing: border-box;
+        font-size: 70px;
+        margin-bottom: 0.5em;
+    }
+    .container .txt{
+        box-sizing: border-box;    
+    }
+    .container .txt p{
+        margin-bottom: 1em;
+    }
+    /* section 1 */
+    section:nth-child(1) .container h1{
+        display: flex;
+    }
+    section:nth-child(1) .container h1::before,
+    section:nth-child(1) .container h1::after{
+        content: '';
+        display: block;
+        height: 1px;
+        width: 3em;
+        /* 自動填滿 */
+        flex-grow: 1;
+        background-color: #aaa;
+        margin: auto;
+    }
+    /* section 2 */
+    section:nth-child(2) .container .txt{
+        position: relative;  
+        padding: 15px;
+    }
+    section:nth-child(2) .container .txt::before,
+    section:nth-child(2) .container .txt::after{
+        content: '';
+        width: 50px;
+        height: 50px;
+        position: absolute;
+    }
+    section:nth-child(2) .container .txt::before{
+        top: 0;
+        left: 0;
+        border-top: 3px solid #aaa;
+        border-left: 3px solid #aaa;
+    }
+    section:nth-child(2) .container .txt::after{
+        right: 0;
+        bottom: 0;
+        border-right: 3px solid #aaa;
+        border-bottom: 3px solid #aaa;
+    }
+    </style>
+</head>
+<body>
+   <section>
+        <div class="container">
+            <h1>title Lorem ipsum dolor sit.</h1>
+            <div class="txt">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit recusandae libero eius nulla iure excepturi iusto mollitia perspiciatis quia earum, repellat, corporis corrupti cum nostrum voluptas error illo accusantium ut!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit recusandae libero eius nulla iure excepturi iusto mollitia perspiciatis quia earum, repellat, corporis corrupti cum nostrum voluptas error illo accusantium ut!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit recusandae libero eius nulla iure excepturi iusto mollitia perspiciatis quia earum, repellat, corporis corrupti cum nostrum voluptas error illo accusantium ut!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit recusandae libero eius nulla iure excepturi iusto mollitia perspiciatis quia earum, repellat, corporis corrupti cum nostrum voluptas error illo accusantium ut!</p>
+            </div>
+        </div>
+    </section>
+   <section>
+        <div class="container">
+            <h1>title Lorem ipsum dolor sit.</h1>
+            <div class="txt">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit recusandae libero eius nulla iure excepturi iusto mollitia perspiciatis quia earum, repellat, corporis corrupti cum nostrum voluptas error illo accusantium ut!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit recusandae libero eius nulla iure excepturi iusto mollitia perspiciatis quia earum, repellat, corporis corrupti cum nostrum voluptas error illo accusantium ut!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit recusandae libero eius nulla iure excepturi iusto mollitia perspiciatis quia earum, repellat, corporis corrupti cum nostrum voluptas error illo accusantium ut!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit recusandae libero eius nulla iure excepturi iusto mollitia perspiciatis quia earum, repellat, corporis corrupti cum nostrum voluptas error illo accusantium ut!</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

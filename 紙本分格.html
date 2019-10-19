@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>紙本分格</title>
+    <script src="https://kit.fontawesome.com/9a416a1cca.js" crossorigin="anonymous"></script>
+    <style type="text/css">
+    *{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    body{
+        background-color: #f4f4f4;
+    }
+    .container{
+        box-sizing: border-box;
+        width: 1200px;
+        margin:0 auto;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .logo{
+        height: 190px;
+        display: flex;
+        align-items: center;
+        padding: 0 30px;
+        background: url( "https://picsum.photos/1225/190/?random=1") no-repeat center center;
+       
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 30px;
+        border-top: 3px solid #000;
+        border-bottom: 3px solid #000;
+        background-color: #fff;
+    }
+    nav ul{
+        display: flex;
+    }
+    nav ul li a{
+        display: block;
+        text-transform:uppercase;
+        text-decoration: none;
+        color: #0a0a0a;
+        font-size: 15px;
+        padding: 15px;
+        transition: .3s;
+    }
+    nav ul li:hover a{
+        background-color: #000;
+        color: #fff;
+    }
+    nav .search{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .search button{
+        outline: none;
+        border: none;
+    }
+    .search button:hover{
+        cursor: pointer;
+    }
+    nav .search .fas{
+        font-size: 24px;
+        background-color: #fff;
+    }
+    .article{
+        background-color: #fff;
+    }
+    .item{
+        padding: 30px;
+        width: 70%;
+        display: flex;
+        color: #505559;
+        border: 1px dotted #ddd;
+        border-top: none;
+    }
+    .pic{
+        padding-right: 15px;
+    }
+    .title{
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+    .txt .date{
+        color: #989fa8;
+        font-size: 13px;
+    }
+    .txt p{
+        margin-top: 1.5em;
+        margin-bottom: 10px;
+        font-size: 15px;
+    }
+    .tag{
+        color: #989fa8;
+        font-size: 13px;
+    }
+    .footer{
+        padding: 30px;
+        text-align: center;
+        background-color: #44617b;
+        color: #fff;
+        font-weight: 900;
+    }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="container">
+            <header>
+                <div class="logo">
+                    <img src="https://picsum.photos/130/88/?random=1">
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">新聞</a></li>
+                        <li><a href="#">漫畫</a></li>
+                        <li><a href="#">動畫</a></li>
+                        <li><a href="#">展覽</a></li>
+                        <li><a href="#">訪談</a></li>
+                        <li><a href="#">感想文</a></li>
+                        <li><a href="#">youtube</a></li>
+                        <li><a href="#">漫畫店地圖</a></li>
+                        <li><a href="#">關於</a></li>
+                    </ul>
+                    <div class="search">
+                        <button>
+                                <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </nav>
+            </header>
+            <div class="article">
+                <div class="item">
+                    <div class="pic">
+                        <img src="https://picsum.photos/253/146/?random=1">
+                    </div>
+                    <div class="txt">
+                        <h3 class="title">title</h3>
+                        <div class="date">8th October 2019</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, sint libero animi nobis laudantium iure dignissimos ipsum dolores quod cumque.</p>
+                        <div class="tag">
+                            <span>tag1</span>
+                            <span>tag2</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pic">
+                        <img src="https://picsum.photos/253/146/?random=1">
+                    </div>
+                    <div class="txt">
+                        <h3 class="title">title</h3>
+                        <div class="date">8th October 2019</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, sint libero animi nobis laudantium iure dignissimos ipsum dolores quod cumque.</p>
+                        <div class="tag">
+                            <span>tag1</span>
+                            <span>tag2</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="pic">
+                        <img src="https://picsum.photos/253/146/?random=1">
+                    </div>
+                    <div class="txt">
+                        <h3 class="title">title</h3>
+                        <div class="date">8th October 2019</div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, sint libero animi nobis laudantium iure dignissimos ipsum dolores quod cumque.</p>
+                        <div class="tag">
+                            <span>tag1</span>
+                            <span>tag2</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                &copy; copyright by Eddie
+            </div>
+        </div>
+    </div>
+</body>
+</html>

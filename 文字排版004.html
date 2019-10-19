@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>文字排版004</title>
+    <style type="text/css">
+    @import url("https://fonts.googleapis.com/css?family=Noto+Sans:regular,italic,700,700italic");
+    *{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-family: 'Noto Sans',sans-serif;
+    }
+    .wrap{
+        margin: 100px 0;
+    }
+    .container{
+        width: 1200px;
+        margin: auto;
+        position: relative;
+    }
+    .container h1{
+        width: 400px;
+        box-sizing: border-box;
+        padding: 15px;
+        background-color: #eee;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container .txt{
+        column-count: 2;
+        column-gap: 460px;
+
+    }
+    .container p{
+        line-height: 1.5;
+        margin-bottom: 1em;
+    }
+    .container p:first-child:first-letter{
+        font-size: 40px;
+        float: left;
+        padding-right: 6px;
+    }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="container">
+            <h1>title</h1>
+            <div class="txt">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit necessitatibus qui neque, dolores eius quidem odio placeat aliquam tempora dignissimos tenetur itaque consequuntur, molestias quas cupiditate exercitationem officiis dolore ducimus?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit necessitatibus qui neque, dolores eius quidem odio placeat aliquam tempora dignissimos tenetur itaque consequuntur, molestias quas cupiditate exercitationem officiis dolore ducimus?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit necessitatibus qui neque, dolores eius quidem odio placeat aliquam tempora dignissimos tenetur itaque consequuntur, molestias quas cupiditate exercitationem officiis dolore ducimus?</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit necessitatibus qui neque, dolores eius quidem odio placeat aliquam tempora dignissimos tenetur itaque consequuntur, molestias quas cupiditate exercitationem officiis dolore ducimus?</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

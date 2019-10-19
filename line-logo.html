@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Line-Logo</title>
+    <style type="text/css">
+    @import url('https://fonts.googleapis.com/css?family=Poppins:700,900&display=swap');
+    *{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-family: 'Poppins', sans-serif;
+    }
+    html,body{
+        height: 100%;
+    }
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .container{
+        margin: auto;
+    }
+    .outside{
+        width: 400px;
+        height: 400px;
+        background-color: #02b902;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100px;
+        position: relative;
+    }
+    .inside h1{
+        position: relative;
+        color: #02b902;
+        font-size: 80px;
+        z-index: 2;
+        text-transform: uppercase;
+    }
+    .inside::after{
+        content: '';
+        position: absolute;
+        top: -50px;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+        background-color: #fff;
+        width: 300px;
+        height: 234px;
+        border-radius: 150px/117px;
+    }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="container">
+            <div class="outside">
+                <div class="inside">
+                    <h1>line</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

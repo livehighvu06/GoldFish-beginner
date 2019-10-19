@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>文字排版010</title>
+    <style type="text/css">
+    @import url("https://fonts.googleapis.com/css?family=Noto+Sans:regular,italic,700,700italic");
+    *{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        font-family: 'Noto Sans',sans-serif;
+    }
+    .wrap{
+        margin: 100px 0;
+    }
+    .container{
+        width: 1200px;
+        margin: auto;
+        text-align: center;
+    }
+    .container h1{
+        width:100%;
+        box-sizing: border-box;
+        font-size: 70px;
+        color: #a00;
+        margin-bottom: 0.5em;
+        display: flex;
+    }
+    .container h1::before,
+    .container h1::after{
+        content: '';
+        display: block;
+        height: 1px;
+        width: 3em;
+        /* 自動填滿 */
+        flex-grow: 1;
+        background-color: #aaa;
+        margin: auto;
+    }
+    .container h1::before{
+        margin-right: .5em;
+    }
+    .container h1::after{
+        margin-left: .5em;
+    }
+    .container .txt{
+        flex-shrink: 0;
+        box-sizing: border-box;    
+    }
+    .container .txt p{
+        margin-bottom: 1em;
+    }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="container">
+            <h1>title Lorem ipsum dolor sit.</h1>
+            <div class="txt">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit recusandae libero eius nulla iure excepturi iusto mollitia perspiciatis quia earum, repellat, corporis corrupti cum nostrum voluptas error illo accusantium ut!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit recusandae libero eius nulla iure excepturi iusto mollitia perspiciatis quia earum, repellat, corporis corrupti cum nostrum voluptas error illo accusantium ut!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit recusandae libero eius nulla iure excepturi iusto mollitia perspiciatis quia earum, repellat, corporis corrupti cum nostrum voluptas error illo accusantium ut!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit recusandae libero eius nulla iure excepturi iusto mollitia perspiciatis quia earum, repellat, corporis corrupti cum nostrum voluptas error illo accusantium ut!</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
